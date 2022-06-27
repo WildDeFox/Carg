@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CAAG",
+    "mappings": "AAGA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CAAG;;AAEjB,AAAA,IAAI,CAAC;EACD,UAAU,ECRD,OAAO;CDQU",
     "sources": [
-        "main.sass"
+        "main.sass",
+        "_vars.sass",
+        "_mixins.sass"
     ],
     "names": [],
     "file": "main.css"
