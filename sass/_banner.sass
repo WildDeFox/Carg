@@ -1,0 +1,53 @@
+.banner-img
+    width: 100%
+    
+.main
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+
+.carousel-desc
+    display: grid
+    grid-template-columns: 15% 1fr 15%
+    grid-template-rows: 1fr 12%
+    position: absolute
+    width: 100%
+    height: 100%
+    
+
+.arrow-right, .arrow-left
+    display: flex
+    justify-content: center
+    align-items: center
+
+.carousel-desc-content
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.main-title
+    color: $text-color
+    @include txt(700, 56px, 126%)
+
+.main-desc
+    color: $text-color
+    @include txt(400, 20px, 135px)
+
+.main-btn
+    display: flex
+    max-width: 293px
+    justify-content: center
+    align-items: center
+
+.main-btn-arr
+    margin-left: 20px
+
+.carousel-nav
+    grid-column: 1/4
+    text-align: center
+    
+.carousel-radio
+    width: 8px
+    margin-right: 26px
