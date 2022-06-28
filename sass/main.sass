@@ -4,6 +4,50 @@
 *
     margin: 0
     padding: 0
+    box-sizing: border-box
 
 body
+    font-family: 'Montserrat', sans-serif
     background: $main-color 
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+
+// Header
+.header
+    padding: 25px 0
+
+.flex-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.navbar-list
+    list-style: none
+    display: flex
+
+.navbar-link
+    @include txt(400, 16px, 146%)
+    text-decoration: none
+    color: $text-color
+    transition: all .8s ease
+    padding: 0 20px
+    &:hover
+        color: $yellow-color
+
+.btn
+    padding: 14px 27px
+    background: $yellow-color
+    border-radius: 90px
+    color: $text-color
+    text-decoration: none
+    border: 1px solid $yellow-color
+    transition: all .8s ease
+    &:hover
+        background: inherit
+        color: $yellow-color
+        
+
+.btn-nav
+    font-weight: 600

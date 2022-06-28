@@ -1,9 +1,75 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  background: #6A6A6A;
+  font-family: 'Montserrat', sans-serif;
+  background: #282B38;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 25px 0;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 146%;
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  padding: 0 20px;
+}
+
+.navbar-link:hover {
+  color: #E58D35;
+}
+
+.btn {
+  padding: 14px 27px;
+  background: #E58D35;
+  border-radius: 90px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #E58D35;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.btn:hover {
+  background: inherit;
+  color: #E58D35;
+}
+
+.btn-nav {
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */
