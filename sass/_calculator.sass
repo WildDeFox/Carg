@@ -1,0 +1,112 @@
+.calculator
+    position: relative
+    
+.calculator-main
+    display: flex
+    justify-content: space-between
+
+.calculator-title
+    @include txt(700, 32px, 44px)
+    color: $text-color
+    text-transform: uppercase
+    margin-bottom: 62px
+    
+
+.line
+    width: 50px
+    height: 2px
+    color: #89C249
+
+.link-digital
+    position: absolute
+    top: -2%
+
+.digital
+    @include txt(700, 24px, 30px)
+    color: $text-color
+    text-decoration: none
+    border: 2px solid #363A4D
+    border-radius: 50%
+    background: #282B38
+    padding: 16px 24px
+    margin-right: 41px
+    transition: all .8s ease
+    &:hover
+        background: $yellow-color
+
+.active
+    background: #89C249
+    border: none
+    &:hover
+        background: #89C249
+
+.one
+    padding: 15px 26px
+
+.calculator
+    background: #363A4D
+    padding: 70px 50px
+    border-radius: 20px
+
+.row
+    display: flex
+
+.column-1, .column-2
+    display: flex
+    flex-direction: column
+    margin-right: 30px
+    &:last-of-type
+        margin-right: 0
+
+.form-label
+    @include txt(600, 15px, 19px)
+    color: $text-color
+    margin-bottom: 6px
+
+.form-input
+    @include txt(400, 15px, 19px)
+    color: #CBCBCB
+    padding: 18px 20px
+    border-radius: 10px
+    border: none
+    margin-bottom: 20px
+
+.sub-link
+    @include txt(400, 14px, 20px)
+    color: $yellow-color
+    text-decoration: underline
+
+.check
+    display: flex
+    flex-direction: column
+    height: 100%
+    justify-content: space-evenly
+
+.men
+    width: 100%
+
+.space
+    display: flex
+    justify-content: space-between
+
+.test_1
+    width: 100%
+    border: 1px dashed $yellow-color
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 50px
+    border-radius: 20px
+
+.file_desc
+    @include txt(400, 15px, 19px)
+    color: white
+    margin-top: 24px
+    margin-bottom: 14px
+
+.delete
+    @include txt(400, 13px, 16px)
+    color: #E53535
+
+.file
+    margin-bottom: 26px
