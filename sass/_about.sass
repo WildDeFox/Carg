@@ -1,0 +1,103 @@
+.about
+    padding-top: 80px
+    padding-bottom: 100px
+
+.about-container
+    display: flex
+    justify-content: space-between
+
+.left-heading
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+.line-left
+    margin-left: 0 !important
+
+.about-txt-wrap
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.about-desc
+    @include txt(400, 18px, 30px)
+    color: $text-color
+    margin-bottom: 15%
+    &:last-of-type
+        margin-bottom: 0
+
+.faq-left
+    width: 60%
+
+
+
+
+.details-name
+    display: flex
+    justify-content: space-between
+    cursor: pointer
+    align-items: center
+    @include txt(700, 18px, 22px)
+    color: $text-color
+    &::-webkit-detail-marker
+        display: none
+    &::after
+        content: url(../images/details-a.png)
+        
+.faq-details
+    border: 1px solid #3A444E
+    border-radius: 10px
+    padding: 21px 34px
+    width: 100%
+    transition: all .8s ease
+    margin-bottom: 16px
+    
+
+.faq-details[open]
+    background: white
+    
+.faq-details[open] > summary
+    color: #282B38
+    &::after
+        content: url(../images/details-b.png)
+
+.details-txt
+    @include txt(400, 17px, 24px)
+    color: $main-color
+
+.faq-container
+    display: flex
+    justify-content: space-between
+
+.faq-form-container
+    max-width: 390px
+    display: flex
+    flex-direction: column
+    background: #363A4D
+    box-shadow: 5px 15px 40px rgba(11, 24, 97, 0.32)
+    border-radius: 20px
+    padding: 38px 40px
+
+.faq-form-title
+    @include txt(700, 24px, 30px)
+    color: $text-color
+    margin-bottom: 8px
+
+.faq-form-txt
+    @include txt(400, 17px, 21px)
+    color: $text-color
+    margin-bottom: 23px
+
+.faq-input
+    @include txt(400, 15px, 19px)
+    color: #CBCBCB
+    background: #FFFFFF
+    border: none
+    border-radius: 10px
+    padding: 18px 20px
+    width: 100%
+    margin-bottom: 14px
+
+.faq-btn
+    max-width: 100%
+    width: 100%
