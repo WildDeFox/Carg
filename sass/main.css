@@ -465,6 +465,101 @@
   background: inherit;
 }
 
+.services {
+  margin: 0 50px;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#363A4D), to(#363A4D)), #F7F7F7;
+  background: linear-gradient(0deg, #363A4D, #363A4D), #F7F7F7;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services-item {
+  padding: 0 30px;
+  position: relative;
+  width: 350px;
+  height: 455px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-radius: 20px;
+}
+
+.services-item::before {
+  content: " ";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 5, 17, 0.91)), to(rgba(88, 88, 88, 0)));
+  background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
+}
+
+.s-1 {
+  background: url(../images/s-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.s-2 {
+  background: url(../images/s-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.s-3 {
+  background: url(../images/s-3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+  z-index: 2;
+  margin-bottom: 13px;
+}
+
+.services-txt {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #ffffff;
+  z-index: 2;
+  margin-bottom: 14px;
+}
+
+.services-btn {
+  max-width: 153px;
+  z-index: 2;
+  background: none;
+  margin-bottom: 33px;
+}
+
+.services-btn:hover {
+  background: none;
+}
+
 * {
   margin: 0;
   padding: 0;
